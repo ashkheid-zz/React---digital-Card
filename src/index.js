@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './style.css';
 
 //#region Creating root element inside the <body> tag
 //Creating <div> element
