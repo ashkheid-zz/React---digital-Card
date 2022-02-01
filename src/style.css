@@ -1,3 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+:root {
+  --clr-blue: #5093e2;
+  --clr-blue--dark: #4783c9;
+  --clr-gray--dark100: #23252c;
+  --clr-gray--dark200: #1a1b21;
+  --clr-gray--dark300: #161619;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  background-color: var(--clr-gray--dark100);
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a > img {
+  display: inline-block;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 40px;
+  width: 320px;
+  border-radius: 10px;
+  background-color: var(--clr-gray--dark200);
+}
+
+.card__header {
+  text-align: center;
+}
+
+.card-header__image {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-header__content {
+  padding: 15px;
+}
+
+.card-header__content > * {
+  padding: 5px;
+}
+
+.card-header__title {
+  font-size: 24px;
+}
+
+.card-header__subtitle {
+  color: var(--clr-blue);
+}
+
+.card-header__contacts {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-header__contact {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.card-header__contact:hover {
+  filter: brightness(90%);
+}
+
+.card-header__contact--icon {
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+.card__body {
+  padding: 30px 40px;
+}
+
+.card__body > * + * {
+  margin-top: 15px;
+}
+
+.card__about--title,
+.card__interests--title {
+  color: var(--clr-blue);
+}
+
+.card__about--content,
+.card__interests--content {
+  font-size: small;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--clr-gray--dark300);
+}
+
+.card_footer--icon {
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.card_footer--icon:hover {
+  transform: scale(1.2);
+}
+
+a.btn {
+  width: 110px;
+  padding-block: 8px;
+  background-color: white;
+  color: var(--clr-gray--dark200);
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+}
+
+a.btn-linkedin {
+  color: inherit;
+  background-color: var(--clr-blue);
+  border-color: var(--clr-blue--dark);
 }
