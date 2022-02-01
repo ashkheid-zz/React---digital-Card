@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
+import App from './App';
 
 //#region Creating root element inside the <body> tag
 //Creating <div> element
@@ -13,4 +14,4 @@ rootElement.setAttribute('id', 'root');
 document.body.append(rootElement);
 //#endregion
 
-ReactDOM.render(<h1>Hello from React 👋🏻</h1>, rootElement);
+ReactDOM.render(<App />, rootElement);
